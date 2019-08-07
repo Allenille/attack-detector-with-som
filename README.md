@@ -1,11 +1,13 @@
 # Identify some types of attacks with a self organised map (SOM)
-## Installation of the python script
+## IPre-requisities of the python script
 The Python script is written in Python 3.
 First you need to install some Python library:
 * json
 * numpy
 * matplotlib
 * [somoclu](https://somoclu.readthedocs.io/en/stable/download.html) which is the library for the SOM
+
+The python script needs a packet capture file transformed into a json file with the tshark command line program to analyze the data. As the creation of all the data is automated in a shell script if you want some details about this command you can look into the shell script simulation.sh
 
 ## Options to setup in the script
 ### Group the packets by source or destination host
