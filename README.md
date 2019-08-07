@@ -58,7 +58,7 @@ The powertracker module and the radio messages module has to be open too. And th
 
 You can the create all the csc file you want and now execute the simulation script and it will launch all the simulation one by one and store all the log file in the directory of your choice to be analyzed later by the python script.
 
-** Warning: the json file could be very big (~500Mo for 10 motes and 3 minutes of simulation in case of a flooding attack for example) so make sure you have enough space available on your computer. **
+**Warning: the json file could be very big (~500Mo for 10 motes and 3 minutes of simulation in case of a flooding attack for example) so make sure you have enough space available on your computer.**
 
 
 
