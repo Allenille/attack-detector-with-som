@@ -56,6 +56,13 @@ To facilitate the creation and the configuration of the csc file I really encour
 As the simulation is completely automated your simulation has to have a script file written in js that is provided in this repositery (script.js), this file was taken from this repositery: https://github.com/dhondta/rpl-attacks
 In Cooja, the script module has to include this script and it has to be activated in the options of the module in cooja ("Run -> Activate")
 
+You can change the duration time of the simulation by changing the number of milliseconds in the file script.js :
+
+```javascript
+TIMEOUT(300000, log.testOK());
+var c = 0, i = 1, period = 300000, screenshot = false, pad = "00000", nbr = "";
+```
+
 The powertracker module and the radio messages module has to be open too. And the radio messages module has to be on the mode "Analyzer -> 6LowPan Analyzer with PCAP" in order to produce the pcap file.
 
 You can the create all the csc file you want and now execute the simulation script and it will launch all the simulation one by one and store all the log file in the directory of your choice to be analyzed later by the python script.
